@@ -1,0 +1,27 @@
+<template>
+    <!-- <lightning-datatable key-field="Id" data={itemsForCurrentView} columns={columns}>
+    </lightning-datatable> -->
+    <!-- <lightning-card title="My Data">
+        <lightning-datatable
+        key-field="id"
+        data={data}
+        columns={columns}>
+</lightning-datatable>
+</lightning-card>
+</template>
+<lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+            template>
+<h2> Account Datatable</h2> -->
+<lightning-card title="Products">
+<template if:true={dataValues}>
+<lightning-datatable  data ={dataValues} columns={valuesData} key-field="Id" onsave={handleSave} draft-values={draftValues}>
+</lightning-datatable>
+</template>
+<template if:true={error}>
+{error}
+</template></lightning-card>
+</template>
